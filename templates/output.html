@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Steve's LA Air Quality Dashboard</title>
+</head>
+<body>
+<h1>Welcome to Steve's LA Air Quality Dashboard!</h1>
+<h2><i>the number one LA air quality dash on my local machine</i></h2>	
+<p>Here you'll find a list of times when LA had potentially dangerous levels of particulate matter in the air:</p>
+{% for item in filtered %}
+<p>{{item}}</p>
+{% endfor %}
+</body>
+</html>
